@@ -1,5 +1,5 @@
-body{
-    background-image: url("./assets/home/background-home-desktop.jpg");
+.cross{
+    display: none;
 }
 .homeimg{
     position: absolute;
@@ -392,7 +392,19 @@ line-height: 64px;
 
 @media only screen and (max-width:420px) {
   body{
+    
     background-image: url("./assets/home/background-home-mobile.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}
+.cross{
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+    z-index: 2;
 }
 .line{
     display: none;
@@ -415,8 +427,8 @@ line-height: 64px;
         height: 90vh;
         display: flex;
         flex-direction: column;
-        column-gap: 4vh;
-        left: 10vw;
+        row-gap: 7vh;
+        left: 45vw;
     }
     .homebtn{
         display: none;
